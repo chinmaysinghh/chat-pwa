@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faPen, faPaperclip, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 interface Sender {
@@ -52,12 +54,16 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <button className="back-button">←</button>
+        <button className="back-button">
+          <FontAwesomeIcon icon={faArrowLeft} />
+        </button>
         <h2>{chatData.name}</h2>
-        <button className="edit-button">✏️</button>
+        <button className="edit-button">
+          <FontAwesomeIcon icon={faPen} />
+        </button>
       </header>
       <div className="trip-info">
-        <div className="avatar" style={{backgroundImage: `url(${chatData.chats[0].sender.image})`}}></div>
+        <div className="avatar" style={{ backgroundImage: `url(${chatData.chats[0].sender.image})` }}></div>
         <div className="from-to">
           <div>From {chatData.from}</div>
           <div>To {chatData.to}</div>
@@ -73,8 +79,12 @@ function App() {
       </div>
       <div className="input-area">
         <input type="text" placeholder="Reply to @Rohit Yadav" />
-        <button className="attachment-button">📎</button>
-        <button className="send-button">➤</button>
+        <button className="attachment-button">
+          <FontAwesomeIcon icon={faPaperclip} />
+        </button>
+        <button className="send-button">
+          <FontAwesomeIcon icon={faPaperPlane} />
+        </button>
       </div>
     </div>
   );
