@@ -1,38 +1,124 @@
+/* App.css */
 .App {
-  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.back-button,
+.edit-button,
+.options-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.trip-info {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.from-to {
+  flex-grow: 1;
+}
+
+.chat-container {
+  padding: 10px;
+  height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+.timestamp {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 80%;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.system-message {
+  background-color: #e6ffd9;
+  align-self: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.system-message.small {
+  font-size: 12px;
+  background-color: #f0f0f0;
+}
+
+.user-message {
+  background-color: #1982fc;
   color: white;
+  align-self: flex-end;
+  margin-left: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.other-message {
+  background-color: #f0f0f0;
+  align-self: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-area {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid #eee;
+}
+
+.input-area input {
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  margin-right: 10px;
+}
+
+.attachment-button,
+.send-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.send-button {
+  color: #1982fc;
 }
