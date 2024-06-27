@@ -5,7 +5,7 @@ This project is a simple single-page progressive web application (PWA) chat inte
 
 ## Demo
 
-[Link to live demo (if hosted)]
+Live now : https://chat-pwa-gamma.vercel.app/
 
 ## Features
 
