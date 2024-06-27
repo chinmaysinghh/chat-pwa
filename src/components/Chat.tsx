@@ -1,4 +1,4 @@
-// src/components/Chat.tsx
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Message from './Message'; // Assuming you have a Message component defined
